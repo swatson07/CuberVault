@@ -26,4 +26,14 @@ class CubeState:
     # Method to update the cube state with a full scramble
     def apply_scramble(self, scramble: list):
         for move_name in scramble:
-            self.apply_move(move_name)
+            # If a prime move repeat 3 times to simulate a reverse turn
+            if move_name[-1] == "'":
+                self.apply_move(move_name)
+                self.apply_move(move_name)
+                self.apply_move(move_name)
+            # Rotate twice if a double move
+            elif move_name[-1] == "2":
+                self.apply_move(move_name)
+                self.apply_move(move_name)
+            else:
+                self.apply_move(move_name)
