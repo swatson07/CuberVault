@@ -1,14 +1,74 @@
 {
     "2-look" : {
-        "dot" : "F (R U R' U') F' f (R U R' U') f'",
-        "line" : "F (R U R' U') F'",
-        "L-shape" : "f (R U R' U') f'",
-        "antisune" : "(R U2 R' U') (R U' R')",
-        "H" : "(R U R' U) (R U' R' U) (R U2 R')",
-        "L" : "(F R' F' r) (U R U' r')",
-        "Pi" : "R U2 (R2 U' R2 U' R2) U2 R",
-        "sune" : "(R U R' U) (R U2 R')",
-        "T" : "(r U R' U') (r' F R F')",
-        "U" : "R2 D (R' U2 R) D' (R' U2 R')"
+        "dot" : {
+            "algorithm" : "F R U R' U' F' f R U R' U' f'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [null, null, null, null, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "line" : {
+            "algorithm" : "f R U R' U' f'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [null, null, null, null, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "L-shape" : {
+            "algorithm" : "f R U R' U' f'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [null, null, null, null, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "antisune" : {
+            "algorithm" : "R U2 R' U' R U' R'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [1, 2, 1, 0, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "H" : {
+            "algorithm" : "R U R' U R U' R' U R U2 R'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [1, 1, 1, 1, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+         "L" : {
+            "algorithm" : "F R' F' r U R U' r'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [0, 2, 0, 1, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+         },
+         "Pi" : {
+            "algorithm" : "R U2 R2 U' R2 U' R2 U2 R",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [2, 1, 1, 2, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+         },
+         "sune" : {
+            "algorithm" : "R U R' U R U2 R'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [2, 0, 2, 1, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+         },
+         "T" : {
+            "algorithm" : "r U R' U' r' F R F'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [0, 2, 2, 0, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+         },
+         "U" : {
+            "algorithm" : "R2 D R' U2 R D' R' U2 R'",
+            "cp" : [null, null, null, null, 4, 5, 6, 7],
+            "co" : [2, 2, 0, 0, 0, 0, 0, 0],
+            "ep" : [null, null, null, null, 4, 5, 6, 7, 8, 9, 10, 11],
+            "eo" : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+         }
     }
 }
