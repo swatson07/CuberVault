@@ -1,9 +1,11 @@
 from moves import Move, MOVES
 
 # Class to track the Cube state using permutation and orientation
+# The UFR corner is 0 and counts clockwise so the UFL corner is 1, the UBL corner is 2 etc.
+# The UR edge is 0 and counts clockwise so the UF edge is 1, the UL edge is 2 etc.
 class CubeState:
     def __init__(self):
-        self.corner_perm = list(range(8))
+        self.corner_perm = list(range(8))       
         self.edge_perm = list(range(12))              
 
         self.corner_orient = [0] * 8
